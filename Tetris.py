@@ -188,7 +188,7 @@ while True:
     sc.blit(title_HIGH, (525, 600))
     sc.blit(title_RECORD, (525, 650))
 
-    record = record if int(record) > score else score
+    record = str(max(int(record) if record.isdigit() else 0, score))
     sc.blit(font.render(str(record), True, pygame.Color('gold')), (550, 710))
 
     # Game Over
