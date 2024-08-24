@@ -1,7 +1,7 @@
 import pygame
 import sys
 from copy import deepcopy
-from random import choice, randrange
+from random import choice
 
 WIDTH, HEIGHT = 10, 20;
 TILE = 45;
